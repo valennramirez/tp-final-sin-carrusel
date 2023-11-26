@@ -1,0 +1,10 @@
+<div *ngIf="!currentUser">
+    <app-navbar></app-navbar>
+</div>
+
+<div *ngIf="currentUser">
+    <app-navbar-private></app-navbar-private>
+</div>
+
+<app-visualizar-peliculas-genero></app-visualizar-peliculas-genero>
+<app-footer></app-footer>

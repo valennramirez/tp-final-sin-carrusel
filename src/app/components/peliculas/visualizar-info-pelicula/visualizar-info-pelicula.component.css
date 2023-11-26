@@ -1,0 +1,121 @@
+.visualizar-informacion{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.datos-pelicula{
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    width: 90%;
+    margin-right: 5%;
+}
+
+.poster{
+    grid-column: 1/3;
+    display: grid;
+    margin: 2rem;
+    align-items: end;
+}
+
+.poster img{
+    width:90%;
+}
+
+.texto{
+    grid-column: 3/7;
+    display:grid;
+    text-align: left;
+}
+
+#titulo{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#ratings{
+    color:  rgba(53, 78, 170, 0.64);
+}
+
+#sinopsis{
+    width: 100%;
+}
+
+.datos{
+    grid-column: 1/3;
+    display: grid;
+    margin-left: 3rem;
+}
+
+.datos label, h4{
+    display:inline-table;
+}
+
+.datos h4{
+    font-weight: 100;
+    color: white;
+}
+
+.trailer{
+    grid-column: 3/7;
+    display: grid;
+}
+
+button{
+    width: 25%;
+    height: 10%;
+    background-color: rgba(12, 23, 62, 0.64) ;
+    color: grey;
+    border-radius: 1rem;
+    border-color: rgb(164, 32, 212);
+}
+
+
+select{
+    background-color:#881b4854; 
+    margin: 1%; 
+    width: 50%;
+    border-radius: 5px;
+    border-color:#840037a2; 
+    color: white;
+}
+input[type="submit"]{
+    background-color:#8a0c40;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.9;
+    color: white;
+    width: 25%;
+}
+h2{
+    font-size: 2rem;
+    background: var(--degradadoInv);
+    color: rgba(255,255,255,1);
+  text-decoration: normal;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px #e995de , 0 0 22px #ff00de , 0 0 24px #ff00de ;
+}
+
+.contenedor {
+	width: 90%;
+	display: grid;
+    margin: auto; 
+	grid-template-columns: repeat(5, 1fr);
+	gap: 30px;
+}
+
+.posterSim{
+    width:200px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.posterSim:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,255,255,1) , 0 0 24px rgba(255,255,255,1) ;
+
+}

@@ -1,0 +1,147 @@
+<form id="formulario" [formGroup]="formulario">
+    
+    <legend>Editar Usuario</legend>
+    <div class="campo">
+        <div class="fotoPerfil">
+            <button id="fotoUsuario" class="nuevaFoto"><img src="{{user.fotoPerfil}}" alt="foto de perfil" >Cambiar foto</button>
+            <button type="submit" class="nuevaFoto"><img src="./img/image-from-rawpixel-id-6686685-original.png" alt=""></button>
+            <button type="submit" class="nuevaFoto"><img src="./img/image-from-rawpixel-id-6714409-original.png" alt=""></button>
+        </div>
+    </div>
+
+    <div class="campo">
+
+        <label for="gmail">
+            Gmail: 
+        </label>
+
+        <input type="email" 
+               id="gmail" 
+               name="gmail" 
+               formControlName="gmail" 
+               placeHolder="ejemplo@gmail.com" 
+               required
+               > 
+
+        <div class="error">
+            <span *ngIf="formulario.controls['gmail'].getError('required') && formulario.touched">
+                El campo es requerido
+            </span>
+            <span *ngIf="formulario.controls['gmail'].getError('email') && formulario.touched">
+                Debe ingresar un gmail
+            </span>
+        </div>
+    </div>
+
+    <div class="campo">
+
+        <label for="usuario">
+            Usuario: 
+        </label>
+
+        <input type="text" 
+               id="usuario" 
+               name="usuario" 
+               formControlName="usuario" 
+               placeHolder="Ej: valennramirez22" 
+               required
+               >
+        <div class="error">
+            <span *ngIf="formulario.controls['usuario'].getError('required') && formulario.touched">
+                El campo es requerido
+            </span>
+        </div>
+    </div>
+    
+    <div class="campo">
+
+        <label for="nombre">
+            Nombre: 
+        </label>
+
+        <input type="text" 
+               id="nombre" 
+               name="nombre" 
+               formControlName="nombre" 
+               required
+               >
+        <div class="error">
+            <span *ngIf="formulario.controls['nombre'].getError('required') && formulario.touched">
+                El campo es requerido
+            </span>
+        </div>
+    </div>
+
+    <div class="campo">
+
+        <label for="apellido">Apellido: </label>
+
+        <input type="text" 
+               id="apellido" 
+               name="apellido" 
+               formControlName="apellido"  
+               required
+               >
+        <div class="error">
+            <span *ngIf="formulario.controls['apellido'].getError('required') && formulario.touched">
+                El campo es requerido
+            </span>
+        </div>
+    </div>
+
+    <div class="campo">
+
+        <label for="contraseña">Contraseña: </label>
+
+        <input type="password" 
+               id="contraseña" 
+               name="contraseña" 
+               formControlName="contraseña" 
+               placeHolder="Ej: amoLasPelis222" 
+               required
+               > 
+            <span *ngIf="formulario.controls['contraseña'].getError('minlength') && formulario.touched">
+                La contraseña debe tener al menos 5 caracteres 
+            </span>
+        </div>
+    
+
+
+    <div class="campo">
+        <label for="cumpleaños">Fecha de cumpleaños: </label>
+        <input type="date" 
+               id="cumpleaños" 
+               name="cumpleaños"
+               formControlName="cumpleaños"
+               required
+               > 
+        <div class="error">
+            <span *ngIf="formulario.controls['cumpleaños'].getError('required') && formulario.touched">
+                El campo es requerido
+            </span>
+        </div>
+    </div>
+
+    
+    <div class="campo"> 
+        <label for="genero">Genero: </label>
+        <input list="opciones-genero" id="genero" formControlName="genero">
+        <datalist id="opciones-genero">
+            <option value="femenino"></option>
+            <option value="masculino"></option>
+            <option value="otro"></option>
+        </datalist>
+
+    </div>
+
+    <div class="campo">
+        <input type="hidden"
+               id="id"
+               name="id"
+               formControlName="id"
+        >
+    </div>
+
+    <input type="submit" value="Guardar cambios" id="editar" (click)="editarUsuario()">
+
+</form>

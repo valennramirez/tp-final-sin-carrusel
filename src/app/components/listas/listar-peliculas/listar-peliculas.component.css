@@ -1,0 +1,50 @@
+select{
+    background-color:#881b4854; 
+    margin: 1%; 
+    width: 50%;
+    border-radius: 5px;
+    border-color:#840037a2; 
+    color: white;
+}
+input[type="submit"]{
+    background-color:#8a0c40;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.9;
+    color: white;
+    width: 25%;
+}
+h2{
+    font-size: 2rem;
+    background: var(--degradadoInv);
+    color: rgba(255,255,255,1);
+  text-decoration: normal;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px #e995de , 0 0 22px #ff00de , 0 0 24px #ff00de ;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.poster{
+    width:200px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.poster:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,255,255,1) , 0 0 24px rgba(255,255,255,1) ;
+
+}

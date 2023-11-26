@@ -1,0 +1,23 @@
+input{
+    background-color:transparent; 
+    margin: 1%; 
+    width: 50%;
+    border-radius: 2px;
+    border-color:#880039de; 
+    color: white;
+}
+input[type="submit"]{
+    background:var(--degradadoBtn);
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    color: white;
+    width: 25%;
+    font-family: 'Poppins', sans-serif;
+    weight: 2;
+    transition: .3s ease all;
+}
+input[type="submit"]:hover{
+    transform: scale(1.05);
+
+}

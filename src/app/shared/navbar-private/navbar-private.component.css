@@ -1,0 +1,22 @@
+
+header .navegacion .tit{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 42rem;
+    padding: .5rem 2rem;
+    text-align: justify;
+    justify-content: left;
+    
+    color:#cf1361de; 
+}
+
+header .navegacion .tit i{
+    color: white;
+}
+
+header .navegacion .tit span {
+    padding: 1 .5rem;
+    align-items: flex-start;
+    color: white;
+}

@@ -1,0 +1,169 @@
+<fieldset class="datos">
+
+    <legend>Registrarse</legend>
+
+    <form id="formulario" [formGroup]="formulario">
+
+        <div class="campo">
+
+            <label for="gmail">
+                Gmail: 
+            </label>
+
+            <input type="email" 
+                   id="gmail" 
+                   name="gmail" 
+                   formControlName="gmail" 
+                   placeHolder="ejemplo@gmail.com" 
+                   required
+                   > 
+
+            <div class="error">
+                <span *ngIf="validar('gmail', 'required')">
+                    El campo es requerido
+                </span>
+                <span *ngIf="validar('gmail', 'email')">
+                    Debe ingresar un gmail
+                </span>
+            </div>
+        </div>
+
+        <div class="campo">
+
+            <label for="usuario">
+                Usuario: 
+            </label>
+
+            <input type="text" 
+                   id="usuario" 
+                   name="usuario" 
+                   formControlName="usuario" 
+                   placeHolder="valennramirez22" 
+                   required
+                   >
+            <div class="error">
+                <span *ngIf="validar('usuario', 'required')">
+                    El campo es requerido
+                </span>
+                <span *ngIf="validar('usuario', 'minlength')">
+                    El usuario debe tener al menos 5 caracteres 
+                </span>
+            </div>
+        </div>
+        
+        <div class="campo">
+
+            <label for="nombre">
+                Nombre: 
+            </label>
+
+            <input type="text" 
+                   id="nombre" 
+                   name="nombre" 
+                   formControlName="nombre" 
+                   placeHolder="Valentina" 
+                   required
+                   >
+            <div class="error">
+                <span *ngIf="validar('nombre', 'required')">
+                    El campo es requerido
+                </span>
+            </div>
+        </div>
+
+        <div class="campo">
+
+            <label for="apellido">Apellido: </label>
+
+            <input type="text" 
+                   id="apellido" 
+                   name="apellido" 
+                   formControlName="apellido" 
+                   placeHolder="Ramirez" 
+                   required
+                   >
+            <div class="error">
+                <span *ngIf="validar('apellido', 'required')">
+                    El campo es requerido
+                </span>
+            </div>
+        </div>
+
+        <div class="campo">
+
+            <label for="contraseña">Contraseña: </label>
+
+            <input type="password" 
+                   id="contraseña" 
+                   name="contraseña" 
+                   formControlName="contraseña" 
+                   placeHolder="amoLasPelis222" 
+                   required
+                   > 
+            <div class="error">
+                <span *ngIf="validar('contraseña', 'required')">
+                    El campo es requerido
+                </span>
+                <span *ngIf="validar('contraseña', 'minlength')">
+                    La contraseña debe tener al menos 5 caracteres 
+                </span>
+            </div>
+        </div>
+
+
+        <div class="campo">
+            <label for="cumpleaños">Fecha de cumpleaños: </label>
+            <input type="date" 
+                   id="cumpleaños" 
+                   name="cumpleaños"
+                   formControlName="cumpleaños"
+                   required
+                   > 
+            <div class="error">
+                <span *ngIf="validar('cumpleaños', 'required')">
+                    El campo es requerido
+                </span>
+            </div>
+        </div>
+
+        
+        <div class="campo"> 
+            <label for="genero">Genero: </label>
+            <input list="opciones-genero" id="genero" formControlName="genero">
+            <datalist id="opciones-genero">
+                <option value="femenino"></option>
+                <option value="masculino"></option>
+                <option value="otro"></option>
+            </datalist>
+
+        </div>
+
+        <div class="campo">
+            <input type="hidden"
+                   id="id"
+                   name="id"
+                   formControlName="id"
+            >
+        </div>
+
+        <div class="campo">
+            <input type="hidden"
+                   id="listaVer"
+                   name="listaVer"
+                   formControlName="listaVer"
+            >
+        </div>
+
+        <div class="campo">
+            <input type="hidden"
+                   id="listaVistos"
+                   name="listaVistos"
+                   formControlName="listaVistos"
+            >
+        </div>
+        
+
+        <input type="submit" value="Registrarse" id="registrar" (click)="guardarUsuario()">
+   
+    </form>
+</fieldset>

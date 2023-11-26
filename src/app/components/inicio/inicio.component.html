@@ -1,0 +1,156 @@
+<section class="peliculas" >
+    <div class="contenedor">
+
+        <div>
+            <h3>Top Rated</h3>
+            <div class="slider-peliculas" >
+            <div *ngFor="let item of listadoMejoresPuntuados" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Trending hoy</h3>
+            <div class="slider-peliculas">
+            <div *ngFor="let item of listadoTrendingDay" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Trending esta semana</h3>
+            <div class="slider-peliculas" >
+            <div *ngFor="let item of listadoTrendingWeek" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3 [routerLink]="['/genero', 28]">Accion</h3>
+            <div class="slider-peliculas" >
+            <div *ngFor="let item of listadoAccion" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 10749]">Romance</h3>
+            <div class="slider-peliculas" >
+            <div  *ngFor="let item of listadoRomance" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 18]">Drama</h3>
+            <div class="slider-peliculas" >
+            <div *ngFor="let item of listadoDrama" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 9648]">Misterio</h3>
+            <div class="slider-peliculas" >
+            <div *ngFor="let item of listadoMisterio" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 878]">Ciencia Ficcion</h3>
+            <div class="slider-peliculas" >
+            <div  *ngFor="let item of listadoCienciaFiccion" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 12]">Aventura</h3>
+            <div class="slider-peliculas">
+            <div *ngFor="let item of listadoAventura" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 53]">Thriller</h3>
+            <div class="slider-peliculas" >
+            <div *ngFor="let item of listadoThriller" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 10751]">Familiar</h3>
+            <div class="slider-peliculas">
+            <div *ngFor="let item of listadoFamiliar" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 27]">Horror</h3>
+            <div class="slider-peliculas">
+            <div *ngFor="let item of listadoHorror" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 14]">Fantasia</h3>
+            <div class="slider-peliculas">
+            <div *ngFor="let item of listadoFantasia" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 16]">Animacion</h3>
+            <div class="slider-peliculas">
+            <div *ngFor="let item of listadoAnimacion" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 [routerLink]="['/genero', 99]">Documental</h3>
+            <div class="slider-peliculas">
+            <div *ngFor="let item of listadoDocumental" class="listado">
+                <img class="portada" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+                <h4 class="titulo">{{item.title}}</h4>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</section>

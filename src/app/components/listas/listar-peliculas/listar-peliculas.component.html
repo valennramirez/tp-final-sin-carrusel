@@ -1,0 +1,11 @@
+<app-navbar-private></app-navbar-private>
+<section class="lista">
+    <h2 id="header"></h2>
+    <div class="contenedor" >
+        <div *ngFor="let item of listaPeliculas" class="peliculas">
+            <img class="poster" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+        <h4 class="titulo">{{item.title}}</h4>
+        </div>
+        
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<section class="visualizar-usuario">
+    <div class="fotoPerfil">
+        <img src="image-from-rawpixel-id-6686685-original.png" alt="foto de perfil" >
+          <div class="editarPerfil">
+        <button><a href="" [routerLink]="['/editar', user.id]">Editar</a></button>
+    </div>
+
+    </div>
+
+    <div class="nombreUsuario">
+        <h1 id="usuario">{{user.usuario}}</h1>
+    </div>
+
+    <div class="descripcion">
+        <p id="descripcion">
+        </p>
+    </div>
+  <div id="listas">
+    <div class="listaVer">
+        <input type="submit"  value="Peliculas que quiero ver" [routerLink]="['/lista', 1]">
+    </div>
+    <div class="listaVisto">
+        <input type="submit"  value="Peliculas que ya vi" [routerLink]="['/lista', 2]">        
+    </div>
+</div>
+</section>

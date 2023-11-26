@@ -1,0 +1,120 @@
+{
+  "usuarios": [
+    {
+      "gmail": "valentina@gmail.com",
+      "usuario": "valennramirez22",
+      "nombre": "Valentina",
+      "apellido": "Ramirez",
+      "contraseña": "Valen345",
+      "id": 1,
+      "cumpleaños": "2023-11-02",
+      "genero": "femenino",
+      "listaVer": [
+        {
+          "id": "507089",
+          "poster_path": "/t6RSJ1z8bDEYpk4fLwxfkXciUak.jpg",
+          "title": "Five Nights at Freddy's"
+        },
+        {
+          "id": "240",
+          "poster_path": "/mbry0W5PRylSUHsYzdiY2FSJwze.jpg",
+          "title": "El padrino. Parte II"
+        },
+        {
+          "id": "951491",
+          "poster_path": "/epN0x9JTf3esk1FO8DWkhlE4Ax5.jpg",
+          "title": "Saw X"
+        }
+      ],
+      "listaVistos": [
+        {
+          "id": "424",
+          "poster_path": "/xnvHaMFNXzemoH4uXHDMtKnpF7l.jpg",
+          "title": "La lista de Schindler"
+        },
+        {
+          "id": "346698",
+          "poster_path": "/fNtqD4BTFj0Bgo9lyoAtmNFzxHN.jpg",
+          "title": "Barbie"
+        }
+      ],
+      "fotoPerfil": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kegich.svg/341px-Kegich.svg.png"
+    },
+    {
+      "gmail": "ramirez@gmail.com",
+      "usuario": "ultra_",
+      "nombre": "valentina",
+      "apellido": " ramirez",
+      "contraseña": "hola123",
+      "id": 2,
+      "cumpleaños": "2023-10-31",
+      "genero": "femenino",
+      "listaVer": [],
+      "listaVistos": [],
+      "fotoPerfil": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kegich.svg/341px-Kegich.svg.png"
+    },
+    {
+      "gmail": "val@gmail.com",
+      "usuario": "ultra__",
+      "nombre": "Valentina",
+      "apellido": "Ramirez",
+      "contraseña": "valen222",
+      "id": 3,
+      "cumpleaños": "2023-11-01",
+      "genero": "masculino",
+      "listaVer": [],
+      "listaVistos": [],
+      "fotoPerfil": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kegich.svg/341px-Kegich.svg.png"
+    },
+    {
+      "gmail": "cata@gmail.com",
+      "usuario": "cata1",
+      "nombre": "cata",
+      "apellido": "cataa",
+      "contraseña": "hola123",
+      "id": 4,
+      "cumpleaños": "2023-11-02",
+      "genero": "otro",
+      "listaVer": [],
+      "listaVistos": [],
+      "fotoPerfil": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kegich.svg/341px-Kegich.svg.png"
+    },
+    {
+      "gmail": "cata@gmail.com",
+      "usuario": "catacata",
+      "nombre": "cata",
+      "apellido": "cata",
+      "contraseña": "catacata",
+      "id": 5,
+      "cumpleaños": "2023-11-16",
+      "genero": "otro",
+      "listaVer": [
+        {
+          "id": "155",
+          "poster_path": "/8QDQExnfNFOtabLDKqfDQuHDsIg.jpg",
+          "title": "El caballero oscuro"
+        },
+        {
+          "id": "50619",
+          "poster_path": "/27WlKKz9f3vMr6JvSf0LDBVdtaZ.jpg",
+          "title": "La saga Crepúsculo:  Amanecer - Parte 1"
+        }
+      ],
+      "listaVistos": [],
+      "fotoPerfil": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kegich.svg/341px-Kegich.svg.png"
+    },
+    {
+      "gmail": "ramirez@gmail.com",
+      "usuario": "valen33333333333",
+      "nombre": "Valentina",
+      "apellido": "ss",
+      "contraseña": "aaaaaaaaaaaaa",
+      "id": 6,
+      "cumpleaños": "2023-11-14",
+      "genero": "otro",
+      "listaVer": [],
+      "listaVistos": [],
+      "fotoPerfil": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kegich.svg/341px-Kegich.svg.png"
+    }
+  ]
+}

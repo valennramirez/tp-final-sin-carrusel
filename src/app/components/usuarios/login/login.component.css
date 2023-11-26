@@ -1,0 +1,59 @@
+html{
+    background: black;
+}
+.formulario{
+    margin: 0 auto; 
+    width: 60%; 
+}
+
+.datos legend{
+    font-size: 2rem;
+    text-align: center;
+    background:var(--degradadoBtn);
+    border-radius: 2px;
+    color: white;
+}
+.datos{
+    margin-top: 2rem;
+  text-align: center;
+  border-radius: 5px;
+    border-color: none;
+    box-shadow: 0 0 15px rgba(255,255,255,1);
+}
+label{
+    color:  #BD0034; 
+    margin: 2%; 
+    font-style: oblique;
+    font-weight: 525;
+    position: relative;
+}
+
+input{
+    background-color:transparent; 
+    margin: 1%; 
+    width: 30%;
+    border-radius: 2px;
+    border-color:#880039de; 
+    color: white;
+}
+input[type="submit"]{
+    background:var(--degradadoBtn);
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    color: white;
+    width: 25%;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease all;
+}
+input[type="submit"]:hover{
+    transform: scale(1.05);
+
+}
+span{
+    background-color: rgba(168, 32, 32);
+    color: white; 
+    border-radius: 2px;
+    width: 25%;
+
+}

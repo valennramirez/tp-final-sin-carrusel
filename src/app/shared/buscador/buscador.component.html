@@ -1,0 +1,4 @@
+<div [formGroup]="formulario">
+    <input type="text" id="busqueda" formControlName="titulo" requiered>
+    <input type="submit" name="" id="" value="Buscar" [routerLink]="['/busqueda', this.formulario.get('titulo')!.value]">
+</div> 

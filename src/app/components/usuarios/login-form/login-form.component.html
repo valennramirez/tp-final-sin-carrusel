@@ -1,0 +1,60 @@
+<form action="" class="formulario" [formGroup]="formulario">
+
+    <fieldset class="datos">
+
+        <legend>Mis datos</legend>
+
+        <div class="campo">
+
+            <label for="usuario">
+                Usuario:
+            </label>
+
+        </div>
+
+        <input type="text" 
+               name="usuario" 
+               formControlName="usuario" 
+               requiered
+               >
+        <div class="error">
+
+            <span *ngIf="formulario.controls['usuario'].getError('required') && formulario.touched">
+                El campo es requerido
+            </span>
+
+         </div>
+
+        <div class="campo">
+
+            <label for="contraseña">
+                Contraseña: 
+            </label>
+
+        </div>
+
+        <div class="error">
+
+            <span *ngIf="formulario.controls['contraseña'].getError('required') && formulario.touched">
+                El campo es requerido
+            </span>
+
+         </div>
+
+        <input type="text" 
+               name="contraseña" 
+               formControlName="contraseña" 
+               required 
+               > 
+
+        <div class="campo">
+
+            <input type="submit" 
+                   value="Iniciar Sesion" 
+                   (click)="iniciarSesion()"
+                   >
+
+        </div>
+
+    </fieldset>
+</form>

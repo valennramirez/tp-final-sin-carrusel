@@ -1,0 +1,76 @@
+html{
+    background-color:rgb(6, 12, 33) ;
+    color: rgb(141, 144, 238); 
+    font-family: 'Poppins', sans-serif;
+}
+.registro{
+    margin:0 auto; 
+    width: 50%;
+}
+.datos{
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(255,255,255,1);
+
+}
+
+legend{
+    font-size: 2rem;
+    text-align: center;
+    background:var(--degradadoBtn);
+    border-radius: 2px;
+    color: white;
+
+}
+
+label{
+    color: rgb(120, 120, 235); 
+    margin: 2%; 
+}
+input::placeholder {
+    color: white; 
+}
+input{
+    background-color:transparent; 
+    margin: 1%; 
+    width: 30%;
+    border-radius: 2px;
+    border-color:#880039de; 
+    color: white;
+}
+input[type="submit"]{
+    background:var(--degradadoBtn);
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    color: white;
+    width: 25%;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease all;
+}
+input[type="submit"]:hover{
+    transform: scale(1.05);
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.9;
+    filter: invert(0.9);
+}
+
+span{
+    background-color: rgba(255, 0, 0, 0.381);
+    color: white; 
+    margin: 2%; 
+    border-radius: 2px;
+    width: 25%;
+
+}
+
+.error{
+    background: rgb(168, 32, 32);
+    color: white;
+    width: 25%;
+    border-radius: 2px;
+}

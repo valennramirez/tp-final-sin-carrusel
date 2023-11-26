@@ -1,0 +1,18 @@
+<section class="resultado">
+    <h2>{{this.genero.name}}</h2>
+    <div class="contenedor">
+        <div *ngFor="let item of listaPeliculas.results" class="pelicula">
+            <img class="poster" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+            <h4 class="titulo">{{item.title}}</h4>
+        </div>
+    </div>
+
+    <div class="anterior-siguiente">
+        <div class="b-anterior">
+            <button  *ngIf="this.pagina!=1" (click)="volverPagina()">Anterior</button>
+        </div>
+        <div class="b-siguiente">
+            <button  (click)="pasarPagina()">Siguiente</button>
+        </div>
+    </div>
+</section>   

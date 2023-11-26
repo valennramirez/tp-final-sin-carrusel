@@ -1,0 +1,113 @@
+html{
+    background-color:rgb(6, 12, 33) ;
+    color: rgb(141, 144, 238); 
+    
+}
+*{
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+:root{
+    --violeta: rgb(54, 10, 80);
+    --lavanda: rgb(92, 61, 141);
+    --degradado: linear-gradient(90deg, var(--lavanda), var(--violeta), rgb(0, 0, 0,  .100));
+    --degradadoInv: linear-gradient(90deg, var(--violeta), var(--lavanda), rgb(0, 0, 0,  .100));
+    --degradadoBtn: linear-gradient(90deg, #880039de, #410920de);
+
+
+
+}
+
+
+p, 
+h1, 
+h2, 
+h3,
+h4, 
+text,
+label,
+a, 
+input,
+button,
+legend
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    background-color:  var(--violeta);
+    justify-content: right;
+
+    margin-bottom: 50px;
+}
+.navegacion a{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    text-align: justify;
+    text-decoration: none;
+    margin: .5rem;
+    cursor: pointer;
+    color: rgb(151, 116, 216);
+}
+
+.navegacion a:hover{
+    background-color: #cf1361ad;
+    border-radius: 5rem;
+    color: whitesmoke;
+    box-shadow: 0 .5rem 1rem rgba(221, 221, 221, 0.3);
+    transition: .3s ease all;
+}
+
+.footer{
+    margin-top: 10rem;
+    padding-top: 3rem;
+    background: url(footer-fondo.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.footer .caja-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .caja-contenedor .caja{
+    display: flex;
+    padding: .5rem 2rem;
+    flex: 1 1 25rem;
+    margin: .8rem;
+    margin-left: 20rem;
+}
+
+.footer .caja-contenedor .caja a{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    text-align: justify;
+    text-decoration: none;
+    margin: .5rem;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.footer .caja-contenedor .caja a:hover{
+    text-decoration: underline;
+}
+
+.footer .caja-contenedor .caja .redes i{
+    color:white;
+}
+.footer .creditos{
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: whitesmoke;
+    border-top: .1rem solid whitesmoke;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}

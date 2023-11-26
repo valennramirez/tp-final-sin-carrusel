@@ -1,0 +1,78 @@
+<app-navbar-private></app-navbar-private>
+<section class="visualizar-informacion">
+    <div class="datos-pelicula" >
+
+        <div class="poster">
+            <img id="poster" src="" alt="">
+        </div>
+    
+        <div class="texto">
+            <div class="texto-1"> 
+                <h1 id="titulo"></h1>
+                <h3 id="ratings"></h3>
+                <p id="sinopsis"></p>
+
+                <div *ngIf="getUser">
+                    <div class="boton-lista" *ngIf="!buscarEnListaVer()">
+                        <button id="boton-lista" (click)="guardarEnListaVer()">+Lista Ver</button>
+                    </div>
+    
+                    <div class="boton-lista" *ngIf="buscarEnListaVer()">
+                        <button id="boton-lista" (click)="eliminarPeliculaListaVer()">+Eliminar Ver</button>
+                    </div>
+
+                    <div class="boton-lista" *ngIf="!buscarEnListaVistos()">
+                        <button id="boton-lista" (click)="guardarEnListaVistos()">+Lista Vistos</button>
+                    </div>
+    
+                    <div class="boton-lista" *ngIf="buscarEnListaVistos()">
+                        <button id="boton-lista" (click)="eliminarPeliculaListaVistos()">+Eliminar Vistos</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="datos">
+
+            <label for="">
+                Productora:<h4 id="productora"></h4> 
+            </label>
+            
+
+            <label for="genero">
+                Genero: <h4 id="genero"></h4>
+            </label>
+            
+
+            <label for="">
+                Duracion:<h4 id="duracion"></h4>
+            </label>
+            
+
+            <label for="">
+                Fecha de lanzamiento:<h4 id="lanzamiento"></h4>
+            </label>
+            
+
+            <label for="">
+                Idiomas hablados:<h4 id="idioma"></h4>
+            </label>
+            
+
+        </div>
+        
+
+    </div>
+</section>
+
+<section class="similares">
+    <h2>Recomendaciones</h2>
+    <div class="contenedor" >
+        <div *ngFor="let item of listadoRecomendaciones.results" class="peliculas">
+            <img class="posterSim" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="" [routerLink]="['/pelicula', item.id]">
+            <h4 class="tituloSim">{{item.title}}</h4>
+        </div>
+        
+    </div>
+</section>

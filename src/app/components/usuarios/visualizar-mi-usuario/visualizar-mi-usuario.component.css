@@ -1,0 +1,77 @@
+.visualizar-usuario{
+    display:grid; 
+    grid-template-columns: repeat(4, 2fr);
+    background: url(fondoUsuario.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+
+img{
+    border-radius: 1000px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    shape-outside: circle();
+    display: grid;
+    grid-column: 1/2;
+}
+
+.nombreUsuario{
+    color:#FDB731; 
+    display: grid;
+    grid-column: 2/5;
+}
+
+.listaVer{
+    display: grid;
+    grid-column: 2/3;
+}
+
+.listaVisto{
+    display: grid;
+    grid-column:3/4; 
+}
+
+input{
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+input[type="submit"]{
+    background:var(--degradadoBtn);
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    color: white;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease all;
+}
+input[type="submit"]:hover{
+    transform: scale(1.05);
+
+}
+button{
+    width: 25%;
+    height: 10%;
+    background-color: rgba(12, 23, 62, 0.64) ;
+    border-radius: 1rem;
+    border-color: rgb(0, 21, 255);
+    margin: 10px;
+}
+#listas{
+    display: flex;
+    height: 10%;
+    border-radius: 5px;
+}
+
+#listaVer input {
+    margin: 2.5rem;
+}
+#listaVistos input {
+    margin: 2.5rem;
+}

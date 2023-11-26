@@ -1,0 +1,61 @@
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.listadopeliculas_genero{
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    width: 90%;
+    margin-right: 5%;
+}
+
+.contenedor{
+    width: 100%;
+}
+
+#peliculas{
+    grid-column: 1/7; 
+}
+
+h3{
+    font-size: 2rem;
+    background: var(--degradadoInv);
+    color: rgba(255,255,255,1);
+  text-decoration: normal;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px #e995de , 0 0 22px #ff00de , 0 0 24px #ff00de ;
+}
+
+.slider-peliculas{
+    margin: auto;
+    display: grid;
+    width: 90%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 30px;
+}
+
+
+.portada{
+    align-items: center;
+    width: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.portada:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,255,255,1) , 0 0 24px rgba(255,255,255,1) ;
+
+}
+
+.titulo{
+    align-items: center;
+    
+    
+}
