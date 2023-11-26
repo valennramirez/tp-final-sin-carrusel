@@ -6,7 +6,7 @@ Malena Castro - comision 1
 
 ## github 
 
-El repositorio: https://github.com/valennramirez/tp-final-labo4.git 
+El repositorio con carrusel: https://github.com/valennramirez/tp-final-labo4.git 
 
 ## instalar libreria ngx-slick-carrousel 
 
